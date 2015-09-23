@@ -26,6 +26,7 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
+BuildRequires: cmake(Qt5Test)
 
 %description
 KDE library for handling contact data
