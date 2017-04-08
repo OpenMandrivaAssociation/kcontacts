@@ -3,7 +3,7 @@
 %define devname %mklibname KF5Contacts -d
 
 Name: kcontacts
-Version:	17.03.80
+Version:	17.03.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -56,8 +56,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+%find_lang kcontacts5
 
-%files
+%files -f kcontacts5.lang
 %{_datadir}/kf5/kcontacts
 
 %files -n %{libname}
