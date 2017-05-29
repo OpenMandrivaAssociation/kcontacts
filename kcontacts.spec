@@ -27,6 +27,8 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
+Conflicts:	kde-l10n < 3:17.04.0
+Conflicts:	kde-l10n < 17.04.0
 
 %description
 KDE library for handling contact data
