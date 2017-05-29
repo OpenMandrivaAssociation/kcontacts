@@ -16,8 +16,6 @@ Summary: KDE library for handling contact data
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF5Codecs)
 BuildRequires: cmake(KF5Config)
@@ -27,11 +25,10 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
-Conflicts:	kde-l10n < 3:17.04.0
 Conflicts:	kde-l10n < 17.04.0
 
 %description
-KDE library for handling contact data
+KDE library for handling contact data.
 
 %package -n %{libname}
 Summary: KDE library for handling contact data
@@ -39,7 +36,7 @@ Group: System/Libraries
 Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
-KDE library for handling MIME types
+KDE library for handling MIME types.
 
 %package -n %{devname}
 Summary: Development files for %{name}
