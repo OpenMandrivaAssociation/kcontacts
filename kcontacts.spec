@@ -3,7 +3,7 @@
 %define devname %mklibname KF5Contacts -d
 
 Name: kcontacts
-Version:	19.04.3
+Version:	19.07.80
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -58,8 +58,8 @@ Development files (Headers etc.) for %{name}.
 %find_lang kcontacts5
 
 %files -f kcontacts5.lang
-%{_sysconfdir}/xdg/kcontacts.categories
-%{_sysconfdir}/xdg/kcontacts.renamecategories
+%{_datadir}/qlogging-categories5/kcontacts.categories
+%{_datadir}/qlogging-categories5/kcontacts.renamecategories
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
@@ -69,3 +69,4 @@ Development files (Headers etc.) for %{name}.
 %{_libdir}/*.so
 %{_libdir}/cmake/*
 %{_libdir}/qt5/mkspecs/modules/*.pri
+%doc %{_docdir}/qt5/KF5Contacts.*
