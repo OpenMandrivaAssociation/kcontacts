@@ -26,7 +26,10 @@ BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: pkgconfig(iso-codes)
+# For API docs
 BuildRequires: doxygen
+BuildRequires: graphviz
+BuildRequires: qt5-assistant
 Conflicts:	kde-l10n < 17.04.0
 
 %description
