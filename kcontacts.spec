@@ -25,6 +25,7 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
+BuildRequires: doxygen
 Conflicts:	kde-l10n < 17.04.0
 
 %description
